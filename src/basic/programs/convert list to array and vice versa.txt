@@ -1,0 +1,54 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package javaapplication1;
+
+import java.util.*;
+import java.io.*;
+
+
+
+
+/**
+ *
+ * @author sayan
+ */
+public class JavaApplication1 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+    
+        //creating a simple list to convert list to array and vice versa
+        String[] arr = {"sayan","is","good","boy"};
+        
+       LinkedList<String> list1 =  new LinkedList<String>(Arrays.asList(arr));
+       
+       list1.add("newvalue");
+       list1.add("newvalue2");
+       list1.addFirst("newvalue3");
+       
+        //convert back to array
+        String[] stuff = list1.toArray(new String[list1.size()]);
+       
+       for(String x : stuff){
+           System.out.println(x);
+       }
+       
+       //convert back to list
+       LinkedList<String> list2 =  new LinkedList<String>(Arrays.asList(stuff));
+       
+       ListIterator<String> itr = list2.listIterator(list1.size());
+       
+        System.out.println("\n back traversal");
+       while(itr.hasPrevious()){
+           System.out.println(itr.previous());
+       }
+       
+    }//end of main    
+}
+
+                                                                                  

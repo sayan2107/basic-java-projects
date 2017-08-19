@@ -1,0 +1,38 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package javaapplication1;
+
+import java.util.*;
+import java.io.*;
+
+
+
+
+/**
+ *
+ * @author sayan
+ */
+public class JavaApplication1 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+    
+        String[] arr = {"apple","sayan","mobile","sachine","bombey"};
+          List<String> list = Arrays.asList(arr);
+          
+          Collections.sort(list);
+          System.out.println(list);
+          
+          Collections.sort(list, Collections.reverseOrder());
+          System.out.println(list);
+       
+       
+    }//end of main    
+}
+
+                                                                                  

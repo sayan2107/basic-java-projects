@@ -1,0 +1,57 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package javaapplication1;
+
+import java.util.*;
+import java.io.*;
+
+
+
+
+/**
+ *
+ * @author sayan
+ */
+public class JavaApplication1 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        
+        //convert arry to a list
+        
+        String[] names = {"youtube","google","opera","apple","xaomi"};
+        List<String> list1 = Arrays.asList(names);
+        
+        
+        ArrayList<String> list2  = new ArrayList<String>(); 
+        
+        list2.add("samsung");
+        list2.add("Toshiba");
+        list2.add("yahoo");
+        
+        for(String x : list2){
+          
+            System.out.println(x);
+        }
+        
+        
+        //adding names arry to list2
+        System.out.println("\n new list");
+        Collections.addAll(list2, names);
+       for(String x : list2){
+          
+            System.out.println(x);
+        }
+    
+      
+       
+       }//end of psvm
+
+}//end of main class
+
+                                                                                  

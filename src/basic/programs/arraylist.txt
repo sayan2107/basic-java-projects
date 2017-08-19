@@ -1,0 +1,45 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package javaapplication1;
+import java.util.ArrayList;
+
+/**
+ *
+ * @author sayan
+ */
+public class JavaApplication1 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        
+        ArrayList<Integer> arr=new ArrayList<Integer>(5);
+        arr.add(2);
+        arr.add(2);
+        arr.add(2);
+        arr.add(666);
+         arr.add(2);
+        arr.add(2);
+        arr.add(2);
+        
+        for(Integer x : arr){
+            System.out.println(x);
+            
+           
+        }
+        
+         System.out.println("size of array " + arr.size());
+         
+         
+         System.out.println("\t");
+       
+         System.out.println("arr to string ----> "+arr.toString());
+         
+       
+    }
+    
+}

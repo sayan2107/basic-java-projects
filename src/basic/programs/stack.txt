@@ -1,0 +1,59 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package javaapplication1;
+
+import java.util.*;
+import java.io.*;
+
+
+
+
+/**
+ *
+ * @author sayan
+ */
+public class JavaApplication1 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        
+        Stack<String> stack = new Stack<String>();
+        
+        stack.push("first");
+        display(stack);
+        
+        stack.push("second");
+        display(stack);
+        
+        stack.push("third");
+        display(stack);
+        
+        stack.pop();
+         display(stack);
+         
+         stack.pop();
+         display(stack);
+         
+         stack.pop();
+         display(stack);
+       }//end of psvm
+
+    
+    private static void display(Stack<String> stack) {
+    
+        if(stack.isEmpty())
+            System.out.println("You have empty stack");
+        else
+            System.out.printf("%s TOP\n",stack);
+     }
+ 
+    
+    
+}//end of main class
+
+                                                                                  
